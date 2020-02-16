@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weight on the planet Mars</title>
+</head>
+
+<body>
+    <h1> Your weight on another planet </h1>
+    <p>On earth you weigh differently than on Mars or Jupiter</p>
+
+    <script>
+        var g_earth = 9.8;
+        var g_mars = 3.7;
+        var g_jupiter = 24.8;
+        var weight = 74;
+        var finished_weight;
+        finished_weight = weight * g_mars / g_earth;
+        finished_weight = parseInt(finished_weight);
+        document.write(finished_weight);
+    </script>
+</body>
+
+</html>
