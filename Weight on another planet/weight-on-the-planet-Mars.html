@@ -10,14 +10,15 @@
     <p>On earth you weigh differently than on Mars or Jupiter</p>
 
     <script>
+        var user = prompt("¿ What is your weight ?");
+        var weight = parseInt (user);
         var g_earth = 9.8;
         var g_mars = 3.7;
         var g_jupiter = 24.8;
-        var weight = 74;
         var finished_weight;
         finished_weight = weight * g_mars / g_earth;
         finished_weight = parseInt(finished_weight);
-        document.write(finished_weight);
+        document.write("Your weight on Mars is: <strong> " +finished_weight +" kilos <strong>");
     </script>
 </body>
 
