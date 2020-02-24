@@ -6,19 +6,38 @@
 </head>
 
 <body>
-    <h1> Your weight on another planet </h1>
-    <p>On earth you weigh differently than on Mars or Jupiter</p>
+    <style>
+
+
+    </style>
+    <div>
+        <h1> Your weight on another planet </h1>
+        <p>On earth you weigh differently than on Mars or Jupiter</p>
+
+    </div>
 
     <script>
         var user = prompt("¿ What is your weight ?");
-        var weight = parseInt (user);
+        var planet = parseInt(prompt("Choose your best planet. \n 1 Mars, 2 Jupiter"));
+        var weight = parseInt(user);
         var g_earth = 9.8;
         var g_mars = 3.7;
         var g_jupiter = 24.8;
         var finished_weight;
-        finished_weight = weight * g_mars / g_earth;
+        var name;
+        if (planet == 1) {
+            finished_weight = weight * g_mars / g_earth;
+            name = "MARS";
+        } else if (planet == 2) {
+            finished_weight = weight * g_jupiter / g_earth;
+            name = "JUPITER";
+        } else {
+            finished_weight = 1000000000000;
+            name = "KRYPTON";
+        }
+
         finished_weight = parseInt(finished_weight);
-        document.write("Your weight on Mars is: <strong> " +finished_weight +" kilos <strong>");
+        document.write("Your weight on " + name + " is: <strong> " + finished_weight + " kilos <strong>");
     </script>
 </body>
 
