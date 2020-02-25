@@ -1,0 +1,151 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+body{
+    background-color: #1a1a1a;
+}
+
+
+.container-title{
+    text-align: center;  
+    
+   
+}
+
+.container-title__planet{
+    color: #14b70a;
+    font-family: 'Source Code Pro';
+    font-size: 5em;
+}
+.container-description__planet{
+    color: #14b70a;
+    font-size: 1em;
+    font-family: 'Source Code Pro';
+    font-weight: 400;
+    margin: 30px;
+
+}
+
+.bg-image{
+    padding: 10px 120px;
+    
+}
+.title-refresh{
+    font-size: 12px;
+    color: bisque;
+    font-family: 'Source Code Pro';
+    font-weight: 400;
+    text-align: center;
+}
+
+
+#jstext {
+    text-align: center;
+    font-size: 4em;
+    color: #36e418;
+    margin: 40px;
+    font-family: 'Source Code Pro';
+    font-weight: 400;
+  
+    
+  }
+
+  .header-imagen{
+    width: 150px;
+    margin: 30px 50px;
+
+      
+  }
+
+  .footer-links {
+    color: bisque;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  footer {
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     min-height: 5em;
+   }
+  
+   .footer-links a {
+    font-family: 'Source Code Pro';
+    font-weight: 400;
+     color: inherit;
+     
+   }
+   
+
+   /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    .header-imagen{
+        width: 300px;
+        margin: 80px;
+    
+          
+      }
+
+      .container-title__planet{
+        color: #14b70a;
+        font-family: 'Source Code Pro';
+        font-size: 10em;
+
+        
+    }
+    .container-description__planet{
+        color: #14b70a;
+        font-size: 4em;
+        font-family: 'Source Code Pro';
+        font-weight: 400;
+    
+    }
+
+    .bg-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .bg-image__cuete {
+        width: 15%;
+    }
+
+    .title-refresh{
+        margin-top: 70px;
+        font-size: 3em;
+        color: bisque;
+        font-family: 'Source Code Pro';
+        font-weight: 400;
+        text-align: center;
+    }
+
+    #jstext {
+        text-align: center;
+        font-size: 6em;
+        color: #36e418;
+        margin: 10px;
+        font-family: 'Source Code Pro';
+        font-weight: 400;
+      
+        
+      }
+    
+  }
+  
+  

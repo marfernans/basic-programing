@@ -3,18 +3,46 @@
 
 <head>
     <title>Weight on the planet Mars</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mars-jupiter.css">
 </head>
 
 <body>
-    <style>
 
+    <div class="container">
+        <div class=" header-imagen">
+            <img class="header-imagen__logo" src="./img/logoxcale.svg" alt="Logo">
+        </div>
 
-    </style>
-    <div>
-        <h1> Your weight on another planet </h1>
-        <p>On earth you weigh differently than on Mars or Jupiter</p>
+        <div class="container-title">
+            <h1 class="container-title__planet"> Your weight on another planet </h1>
+            <p class="container-description__planet">On earth you weigh differently than on Mars or Jupiter</p>
+        </div>
 
     </div>
+
+    <div class="bg-image">
+        <img class="bg-image__cuete" src="./img/coete-fondo.svg" alt="backgound-cuete">
+    </div>
+
+
+
+    <h2 class="title-refresh">Refresh the browser to know another weight</h2>
+
+
+
+
+    <footer>
+        <div id="footer-container">
+            <div>
+                <ul class="footer-links">
+                    <li><a href="https://twitter.com/MARIUSthebrand" target="_blank">Powered by: MARIUStheBrand -
+                            2020</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
 
     <script>
         var user = prompt("¿ What is your weight ?");
@@ -32,13 +60,15 @@
             finished_weight = weight * g_jupiter / g_earth;
             name = "JUPITER";
         } else {
-            finished_weight = 1000000000000;
+            finished_weight = 0;
             name = "KRYPTON";
         }
 
         finished_weight = parseInt(finished_weight);
-        document.write("Your weight on " + name + " is: <strong> " + finished_weight + " kilos <strong>");
+        document.write('<p id="jstext">', "Your weight on " + name + " is: <strong> " + finished_weight + " kilos <strong>", '<p>');
     </script>
+
+
 </body>
 
 </html>
