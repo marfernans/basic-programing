@@ -1,151 +1,87 @@
-html {
-    box-sizing: border-box;
+body {
+margin: 0;
+padding: 0;
 }
 
-*,
-*:after,
-*:before{
-    padding: 0;
-    margin: 0;
-    box-sizing: inherit;
-}
-body{
-    background-color: #1a1a1a;
+.app {
+  min-height: 100vh;
+  background-color: #eeeeee;
+  display: flex;
+  font-family: "Source Code Pro";
+  flex-direction: column;
 }
 
-
-.container-title{
-    text-align: center;  
+.header-imagen
+ {
+  height: 4rem;
+  background-color: #0057e7;
+}
+.header-imagen__logo{
     
-   
-}
-
-.container-title__planet{
-    color: #14b70a;
-    font-family: 'Source Code Pro';
-    font-size: 5em;
-}
-.container-description__planet{
-    color: #14b70a;
-    font-size: 1em;
-    font-family: 'Source Code Pro';
-    font-weight: 400;
     margin: 30px;
-
+    width: 50px;
 }
 
-.bg-image{
-    padding: 10px 120px;
+.section-container {
+  background-color: #b4d0e7;
+  
+}
+
+.container-title__planet {
+  text-align: center;
+  font-weight: 700;
+  color: #008744;
+  font-size: 2em;
+  margin: 30px;
+}
+
+.container-description__planet {
+  text-align: center;
+  color: #d62d20;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 20px 20px 0;
+}
+
+.bg-image {
+   padding: 0px 100px;
     
 }
-.title-refresh{
-    font-size: 12px;
-    color: bisque;
-    font-family: 'Source Code Pro';
-    font-weight: 400;
-    text-align: center;
-}
 
+.title-refresh {
+  text-align: center;
+  color: #ffa700;
+  font-size: 1em;
+  margin: 20px;
+}
 
 #jstext {
-    text-align: center;
-    font-size: 4em;
-    color: #36e418;
-    margin: 40px;
-    font-family: 'Source Code Pro';
-    font-weight: 400;
+  text-align: center;
+  font-weight: 700;
+  color: #008744;
+  font-size: 2em;
+  margin: 0px 80px;
+}
+
+footer {
+  background-color: #0057e7;
+  text-align: center;
+
+
+  height: 4rem;
+}
+a {
+  font-size: 20px;
+  color: #ffffff;
   
-    
-  }
+}
 
-  .header-imagen{
-    width: 150px;
-    margin: 30px 50px;
+@media screen and (min-width: 64em) {
+    .bg-image {
+        padding: 0 40%;
+         
+     }
 
-      
-  }
 
-  .footer-links {
-    color: bisque;
-    font-size: 25px;
-    text-align: center;
-  }
 
-  footer {
-     position: fixed;
-     bottom: 0;
-     width: 100%;
-     min-height: 5em;
-   }
-  
-   .footer-links a {
-    font-family: 'Source Code Pro';
-    font-weight: 400;
-     color: inherit;
-     
-   }
-   
-
-   /* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
-  
-    .header-imagen{
-        width: 300px;
-        margin: 80px;
-    
-          
-      }
-
-      .container-title__planet{
-        color: #14b70a;
-        font-family: 'Source Code Pro';
-        font-size: 10em;
-
-        
-    }
-    .container-description__planet{
-        color: #14b70a;
-        font-size: 4em;
-        font-family: 'Source Code Pro';
-        font-weight: 400;
-    
-    }
-
-    .bg-image{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-    }
-
-    .bg-image__cuete {
-        width: 15%;
-    }
-
-    .title-refresh{
-        margin-top: 70px;
-        font-size: 3em;
-        color: bisque;
-        font-family: 'Source Code Pro';
-        font-weight: 400;
-        text-align: center;
-    }
-
-    #jstext {
-        text-align: center;
-        font-size: 6em;
-        color: #36e418;
-        margin: 10px;
-        font-family: 'Source Code Pro';
-        font-weight: 400;
-      
-        
-      }
-    
-  }
-  
-  
+}

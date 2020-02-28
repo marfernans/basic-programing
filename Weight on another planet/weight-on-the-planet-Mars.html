@@ -5,70 +5,64 @@
     <title>Weight on the planet Mars</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="mars-jupiter.css">
+    <link rel="stylesheet" href="reset.css">
 </head>
 
 <body>
 
-    <div class="container">
+    <main class="app">
+
         <div class=" header-imagen">
             <img class="header-imagen__logo" src="./img/logoxcale.svg" alt="Logo">
         </div>
 
-        <div class="container-title">
-            <h1 class="container-title__planet"> Your weight on another planet </h1>
-            <p class="container-description__planet">On earth you weigh differently than on Mars or Jupiter</p>
-        </div>
+        <section class="section-container">
 
-    </div>
-
-    <div class="bg-image">
-        <img class="bg-image__cuete" src="./img/coete-fondo.svg" alt="backgound-cuete">
-    </div>
-
-
-
-    <h2 class="title-refresh">Refresh the browser to know another weight</h2>
-
-
-
-
-    <footer>
-        <div id="footer-container">
-            <div>
-                <ul class="footer-links">
-                    <li><a href="https://twitter.com/MARIUSthebrand" target="_blank">Powered by: MARIUStheBrand -
-                            2020</a></li>
-                </ul>
+            <div class="container-title">
+                <h1 class="container-title__planet"> Your weight on another planet </h1>
+                <p class="container-description__planet">On earth you weigh differently than on Mars or Jupiter</p>
             </div>
-        </div>
+
+
+            <div class="bg-image">
+                <img class="bg-image__cuete" src="./img/coete-fondo.svg" alt="backgound-cuete">
+            </div>
+
+            <h2 class="title-refresh">Refresh the browser to know another weight</h2>
+
+            <script>
+                var user = prompt("¿ What is your weight ?");
+                var planet = parseInt(prompt("Choose your best planet. \n 1 Mars, 2 Jupiter"));
+                var weight = parseInt(user);
+                var g_earth = 9.8;
+                var g_mars = 3.7;
+                var g_jupiter = 24.8;
+                var finished_weight;
+                var name;
+                if (planet == 1) {
+                    finished_weight = weight * g_mars / g_earth;
+                    name = "MARS";
+                } else if (planet == 2) {
+                    finished_weight = weight * g_jupiter / g_earth;
+                    name = "JUPITER";
+                } else {
+                    finished_weight = 0;
+                    name = "KRYPTON";
+                }
+
+                finished_weight = parseInt(finished_weight);
+                document.write('<p id="jstext">', "Your weight on " + name + " is: <strong> " + finished_weight + " kilos <strong>", '<p>');
+            </script>
+
+
+</section>
+<footer>
+    <a href="https://twitter.com/MARIUSthebrand" target="_blank">Powered by: MARIUStheBrand -
+        2020</a>
     </footer>
 
 
-    <script>
-        var user = prompt("¿ What is your weight ?");
-        var planet = parseInt(prompt("Choose your best planet. \n 1 Mars, 2 Jupiter"));
-        var weight = parseInt(user);
-        var g_earth = 9.8;
-        var g_mars = 3.7;
-        var g_jupiter = 24.8;
-        var finished_weight;
-        var name;
-        if (planet == 1) {
-            finished_weight = weight * g_mars / g_earth;
-            name = "MARS";
-        } else if (planet == 2) {
-            finished_weight = weight * g_jupiter / g_earth;
-            name = "JUPITER";
-        } else {
-            finished_weight = 0;
-            name = "KRYPTON";
-        }
-
-        finished_weight = parseInt(finished_weight);
-        document.write('<p id="jstext">', "Your weight on " + name + " is: <strong> " + finished_weight + " kilos <strong>", '<p>');
-    </script>
-
-
+    </main>
 </body>
 
 </html>
