@@ -13,6 +13,10 @@ var vaca = {
 
 var cantidad = aleatorio(5, 25);
 
+
+
+
+
 fondo.imagen = new Image();
 fondo.imagen.src = fondo.url;
 fondo.imagen.addEventListener("load", cargarFondo);
@@ -45,6 +49,8 @@ function dibujar() {
       var y = y * 60;
       papel.drawImage(vaca.imagen, x, y);
     }
+
+
   }
 }
 
