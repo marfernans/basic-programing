@@ -25,7 +25,7 @@ function ondear() {
   console.log("Luz: " + celda.value);
 
   var luz = celda.value;
-  if (luz > 10) {
+  if (luz > 40) {
     if (turno == 1) {
       turno = 0;
       motor.to(70);
